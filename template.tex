@@ -12,7 +12,7 @@
 \moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{orange}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
 %\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
@@ -23,15 +23,14 @@
 %\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-% personal data
 \firstname{Christian}
 \familyname{Lavoie}
-\title{CV}                          % optional, remove / comment the line if not wanted
-\address{151 Atwater, CP 72107}{H3J 2Z6, Montr\'eal, Canada}    % optional, remove / comment the line if not wanted
-\mobile{+1~(514)~927~7830}                     % optional, remove / comment the line if not wanted
-\fax{+1~(514)~931~6159}                        % optional, remove / comment the line if not wanted
-\email{clavoie@sandreckoning.com}                          % optional, remove / comment the line if not wanted
-\homepage{www.sandreckoning.com}                    % optional, remove / comment the line if not wanted
+\title{CV}
+\address{151 Atwater, CP 72107}{H3J 2Z6, Montr\'eal, Canada}
+\mobile{+1~(514)~927~7830}
+\fax{+1~(514)~931~6159}
+\email{clavoie@sandreckoning.com}
+\homepage{www.sandreckoning.com}
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -49,17 +48,64 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\section{Sommaire \'{E}xecutif}
+Professionel flexible et qualifi\'{e}, capable d'explorer toutes les facettes d'un projet technique et ayant de l'exp\'{e}rience allant de la programmation \`{a} l'administration \`{a} la gestion d'\'{e}quipes extr\^{e}mement qualifi\'{e}s.
+
+\subsection{Points Saillants}
+\begin{description}
+\item[Administration de banques de donn\'{e}es] Ai \'{e}t\'{e} en charge d'une des plus grandes installations MySQL au monde pendant pr\`{e}s de 2 ans.
+
+\vspace{2 mm}
+
+\item[Gestion d'\'{e}quipe] Ai \'{e}t\'{e} \'{e}lu chef d'\'{e}quipe par des coll\'{e}gues avec des dizaines d'ann\'{e}es d'exp\'{e}rience chacun(e)s: un des plus jeunes chefs d'\'{e}quipe chez Google \`{a} 24 ans.
+
+\vspace{2 mm}
+
+\item[Programmation] Habitu\'{e} au d\'{e}veloppement sur des syst\`{e}mes \`{a} centaines ou milliers d'ordinateurs combin\'{e}s, incluant manipulation de teraoctets en temps r\'{e}el.
+\end{description}
+
+\section{Comp\'{e}tences}
+\subsection{Programmation}
+\begin{description}
+\item[Environnements] Android, Servlets, Linux et UNIX, Navigateur
+
+\vspace{2 mm}
+
+\item[Langages] C, C++, Haskell, Java
+
+\vspace{2 mm}
+
+\item[Scriptage] Borgmon, JavaScript, Perl, Python, Sawzall, SQL
+\end{description}
+
+\subsection{Administration de syst\`{e}mes}
+\begin{description}
+\item[Applications] Apache HTTPD, Hadoop, HAProxy, Nagios, NGiNX, NodeJS
+
+\vspace{2 mm}
+
+\item[Banques de donn\'{e}es] Cassandra, HBase, MySQL, PostgreSQL
+
+\vspace{2 mm}
+
+\item[Syst\`{e}mes d'exploitation] Debian, FreeBSD, RHEL, Ubuntu
+\end{description}
+
 \section{\'{E}xperience}
 \cventry{2010--pr\'{e}sent}{Propri\'{e}taire et pr\'{e}sident}{Sand Reckoning Consulting}{Montr\'{e}al, Canada}{}{
 \begin{itemize}%
 \item Support pr\'{e}-investissement pour investisseurs en capitaux de risque.
 \item Conseil en programmation et administration pour jeunes entreprises en TI.
-\item Administration et d\'{e}boggage de syst\'{e}mes complexes en \'{e} d'urgences.
+\item Administration et d\'{e}boggage de syst\`{e}mes complexes en \'{e} d'urgences.
 \end{itemize}}
 
 \vspace{4 mm}
 
-\cventry{2011--2012}{Programmeur s\'{e}nior et chef d'\'{e}quipe}{Hopper}{Montr\'{e}al, Canada}{}{En charge de l'\'{e}quipe des syst\'{e}mes de fond et de l'infrastructure HBase et Hadoop.}
+\cventry{2011--2012}{Programmeur s\'{e}nior et chef d'\'{e}quipe}{Hopper}{Montr\'{e}al, Canada}{}{
+\begin{itemize}%
+\item En charge de l'\'{e}quipe des syst\`{e}mes de fond.
+\item D\'eboggage et am\'{e}lioration interne de l'infrastructure Cassandra.
+\end{itemize}}
 
 \vspace{4 mm}
 
@@ -67,53 +113,66 @@
 
 \vspace{4 mm}
 
-\cventry{2004--2010}{Membre s\'{e}nior de l`\'{e}quipe technique}{Google}{Mountain View, California}{}{Chef d`\'{e}quipe \`{a} double reprise, programmeur et administrateur de syst\`{e}mes informatiques de taille gigantesque.\newline{}%
-\begin{itemize}%
+\cventry{2004--2010}{Membre s\'{e}nior de l`\'{e}quipe technique}{Google}{Mountain View, California}{}{Chef d'\'{e}quipe \`{a} double reprise, programmeur et administrateur de syst\`{e}mes informatiques de taille gigantesque.%
+\begin{itemize}
+\vspace{2 mm}
 \item 2009--2010: \textit{Street View} Programmeur s\'{e}nior pour la collecte et g\'{e}rance de donn\'{e}es de senseurs et des photos prise par la flotte mondiale de voitures.
-\item 2007--2009: \textit{Ads-SRE-DB} Administrateur de syst\^{e}mes s\'{e}nior pour MySQL et divers syst\`{e}mes connexes; pour une des plus grandes installations MySQL au monde. \'{E}lu chef d'\'{e}quipe apr\`{e}s moins d'un an dans l'\'{e}quipe.
-\item 2005--2007: \textit{Froogle} et \textit{Google Base} Chef d'\'{e}quipe pour un groupe de 5 d\'{e}veloppeurs et programmeurs junior. En charge du design, de la programmation et de toutes les activit\'{e}s de d\'{e}veloppement d'un syst\'{e} \`{a} tr\'{e} grande \'{e}chelle.
+\item 2007--2009: \textit{Ads-SRE-DB} Administrateur de syst\'{e}mes s\'{e}nior pour MySQL et divers syst\`{e}mes connexes; pour une des plus grandes installations MySQL au monde. \'{E}lu chef d'\'{e}quipe apr\`{e}s moins d'un an dans l'\'{e}quipe.
+\item 2005--2007: \textit{Froogle} et \textit{Google Base} Chef d'\'{e}quipe pour un groupe de 5 d\'{e}veloppeurs et programmeurs juniors. En charge du design, de la programmation et de toutes les activit\'{e}s de d\'{e}veloppement d'un sys\`{e}mes \`{a} tr\'{e} grande \'{e}chelle.
 \item 2004--2005: \textit{Ads/Deli} Membre d'une \'{e}quipe en charge de la cr\'{e}ation automatique de publicit\'{e}s \`{a} partir de listes d'inventaires.
 \end{itemize}}
 
 \vspace{4 mm}
 
-\cventry{2001-2004}{Administrateur de syst\`{e}mes}{Universit\'{e} McGill}{Montr\'{e}al, Canada}{}{Administrateurs d'un syst\`{e}me Beowulf \`{a} 32 processeurs, et de diverses stations UNIX.}
+\cventry{2001-2004}{Administrateur de syst\`{e}mes}{Universit\'{e} McGill}{Montr\'{e}al, Canada}{}{Administrateur d'un syst\`{e}me Beowulf \`{a} 32 processeurs et de diverses stations UNIX.%
+\begin{itemize}
+\item Administration quotidienne, d\'{e}boggage en \`{e}tat d'urgence, etc.
+\item \textit{Point saillant:} extraction post-mortem de donn\'{e}es d'un disque dur partiellement d\'{e}truit.
+\item \textit{Point saillant:} d\'{e}boggage du noyau Linux et de l'environnement MOSIX.
+\end{itemize}}
 
 \vspace{4 mm}
 
-\cventry{2003}{Programmeur}{\'{E}quilogue}{Montr\'{e}al, Canada}{}{D\'{e}veloppeur Java pour un syst\'{e}me de facturation en ligne.}
+\cventry{2003}{Programmeur}{\'{E}quilogue}{Montr\'{e}al, Canada}{}{D\'{e}veloppeur Java pour un syst\`{e}me de facturation en ligne.
+\begin{itemize}%
+\item Premi\`{e}re exp\'{e}rience en charge d'une \'{e}quipe -- une programmeure juniore sous ma supervision.
+\end{itemize}}
 
 \vspace{4 mm}
 
-\cventry{2003}{Assistant de professeur}{Universit\'{e} McGill}{Montr\'{e}al, Canada}{}{Assistant de Doina Pr\'{e}cup, pour le cour COMP-424: Intelligence Artificielle.}
+\cventry{2003}{Auxiliaire d'enseignement}{Universit\'{e} McGill}{Montr\'{e}al, Canada}{}{Assistant Doina Pr\'{e}cup, pour le cour COMP-424: Intelligence Artificielle.
+\begin{itemize}%
+\item Un des rares assistants de professeur \`{a} McGill encore au niveau du Bac.
+\item Corrections, tutoriels pour \'{e}tudiants, etc.
+\end{itemize}}
 
 \vspace{4 mm}
 
-\cventry{2001}{Programmeur junior}{Centre de M\'{e}t\'{e}orologie du Canada}{Dorval, Canada}{}{Programmeur sur syst\'{e}mes IRIX et super-ordinateurs vectoriels.}
+\cventry{2001}{Programmeur junior}{Centre de M\'{e}t\'{e}orologie du Canada}{Dorval, Canada}{}{Programmeur sur syst\`{e}mes IRIX et super-ordinateurs vectoriels.
+\begin{itemize}
+\item D\'{e}veloppement d'un environemment de collaboration pour m\'{e}t\'{e}orologistes par un applet Java.
+\item D\'{e}veloppement d'une interface visuelle pour contr\^{o}ller les mod\`{e}les m\'{e}t\'{e}orologiques sur super-ordinateurs.
+\end{itemize}}
+
+\section{Activit\'{e}s}
+\begin{description}
+\item[Perl Mongers Montr\'{e}al] Organisateur du regroupement de programmeurs Perl de la grande r\'{e}gion de Montr\'{e}al.
+\item[Montr\'{e}al Tech Leads] Organisateur du regroupement de programmeurs s\'{e}niors et chefs techniques d'entreprisese de la grande r\'{e}gion de Montr\'{e}al.
+\item[Thrift--Haskell] Responsable du d\'{e}veloppement de la librairie Thrift en Haskell, maintenue par le groupe Apache Thrift.
+\end{description}
 
 \section{\'Education}
 \cventry{2000--2004}{Honours in Computer Science}{Universit\'{e} McGill}{Montr\'{e}al, Canada}{\textit{3.49 GPA}}{Majeure en informatique, mineure en philosophie}  % arguments 3 to 6 can be left empty
 % \cventry{1998--2000}{D\'{E}C Sciences Pures}{C\'{E}GEP Sorel-Tracy}{Sorel-Tracy}{\textit{}}{}
 
-\section{Comp\'{e}tences}
-\cvitemwithcomment{Administration BD}{Ai \'{e}t\'{e} en charge d'une des plus grandes installations MySQL au monde pendant pr\`{e}s de 2 ans.}{}
-\cvitemwithcomment{Programmation}{Habitu\'{e} au d\'{e}veloppement sur des syst\'{e}mes \`{a} centaines ou milliers d'ordinateurs combin\'{e}s.}{}
-\cvitemwithcomment{G\'{e}rance d'\'{e}quipe}{Ai \'{e}t\'{e} \'{e}lu chef d'\'{e}quipe par des membres avec des dizaines d'ann\'{e}es d'exp\'{e}rience de plus.}{}
-
-\cvdoubleitem{Programmation}{C, C++, Haskell, Java}{Autres}{JavaScript, Perl, Python, SQL}
-\cvdoubleitem{Applications}{PostgreSQL}{Systemes d'exploitation}{Debian, FreeBSD, RHEL, Ubuntu}
+\pagebreak
 
 \section{Langues}
-\cvitemwithcomment{Fran\c{c}ais}{Excellent, \'{e}cris et oral}{}
 \cvitemwithcomment{Anglais}{Excellent, \'{e}cris et oral}{}
+\cvitemwithcomment{Fran\c{c}ais}{Excellent, \'{e}cris et oral}{}
 
 \section{R\'{e}f\'{e}rences}
-Disponibles (en anglais) au \url{http://www.linkedin.com/profile/view?id=5745317}
-
-\null
-\vfill
-
-\makecvtitle
+Disponibles (en anglais) au \url{http://www.linkedin.com/profile/view?id=5745317#recommendations}
 
 %\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
 
@@ -157,6 +216,5 @@ Disponibles (en anglais) au \url{http://www.linkedin.com/profile/view?id=5745317
 %
 %%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
-
 
 %% end of file `template.tex'.
