@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -65,6 +65,7 @@ Professionel flexible et qualifi\'{e}, capable d'explorer toutes les facettes d'
 \end{description}
 
 \section{Comp\'{e}tences}
+\begin{minipage}[t]{0.49\maincolumnwidth}
 \subsection{Programmation}
 \begin{description}
 \item[Environnements] Android, Servlets, Linux et UNIX, Navigateur
@@ -75,21 +76,26 @@ Professionel flexible et qualifi\'{e}, capable d'explorer toutes les facettes d'
 
 \vspace{2 mm}
 
-\item[Scriptage] Borgmon, JavaScript, Perl, Python, Sawzall, SQL
+\item[Scriptage] Borgmon, JavaScript, Perl, Python, Sawzall
 \end{description}
-
+\end{minipage}
+\begin{minipage}[t]{0.02\maincolumnwidth}
+\phantom{.}
+\end{minipage}
+\begin{minipage}[t]{0.49\maincolumnwidth}
 \subsection{Administration de syst\`{e}mes}
 \begin{description}
-% \item[Applications] Apache HTTPD, Hadoop, HAProxy, Nagios, NGiNX, NodeJS
-% 
-% \vspace{2 mm}
-
+%\item[Applications] Apache HTTPD, Hadoop, HAProxy, Nagios, NGiNX, NodeJS
+%
+%\vspace{2 mm}
+%
 \item[Banques de donn\'{e}es] Cassandra, HBase, MySQL, PostgreSQL
 
 \vspace{2 mm}
 
-\item[Syst\`{e}mes d'exploitation] Debian, FreeBSD, RHEL/CentOS, Ubuntu
+\item[Syst\`{e}mes d'exploitation] Debian, FreeBSD, RHEL, Ubuntu
 \end{description}
+\end{minipage}
 
 \section{Exp\'{e}rience}
 \cventry{2010--pr\'{e}sent}{Propri\'{e}taire et pr\'{e}sident}{Sand Reckoning Consulting}{Montr\'{e}al, Canada}{}{
@@ -111,7 +117,7 @@ Professionel flexible et qualifi\'{e}, capable d'explorer toutes les facettes d'
 
 \cventry{2010--2011}{CTO Int\'{e}rim}{BlueTrader}{Montr\'{e}al, Canada}{}{En charge de l'architecture informatique et de toutes d\'{e}cisions techniques.}
 
-\vspace{4 mm}
+\pagebreak
 
 \cventry{2004--2010}{Membre s\'{e}nior de l`\'{e}quipe technique}{Google}{Mountain View, California}{}{Chef d'\'{e}quipe \`{a} double reprise, programmeur et administrateur de syst\`{e}mes informatiques de taille gigantesque.%
 \begin{itemize}
@@ -133,13 +139,13 @@ Professionel flexible et qualifi\'{e}, capable d'explorer toutes les facettes d'
 
 \vspace{4 mm}
 
-\cventry{2003}{Programmeur}{\'{E}quilogue}{Montr\'{e}al, Canada}{}{D\'{e}veloppeur Java pour un syst\`{e}me de facturation en ligne.
-\begin{itemize}%
-\item Premi\`{e}re exp\'{e}rience en charge d'une \'{e}quipe -- une programmeure juniore sous ma supervision.
-\end{itemize}}
-
-\vspace{4 mm}
-
+%\cventry{2003}{Programmeur}{\'{E}quilogue}{Montr\'{e}al, Canada}{}{D\'{e}veloppeur Java pour un syst\`{e}me de facturation en ligne.
+%\begin{itemize}%
+%\item Premi\`{e}re exp\'{e}rience en charge d'une \'{e}quipe -- une programmeure juniore sous ma supervision.
+%\end{itemize}}
+%%
+%\vspace{4 mm}
+%
 \cventry{2003}{Auxiliaire d'enseignement}{Universit\'{e} McGill}{Montr\'{e}al, Canada}{}{Assistant Doina Pr\'{e}cup, pour le cour COMP-424: Intelligence Artificielle.
 \begin{itemize}%
 \item Un des rares assistants de professeur \`{a} McGill au niveau du Bac.
