@@ -1,9 +1,18 @@
-template.pdf: template.dvi
-	dvipdf template.dvi
+all: main-en.pdf main-fr.pdf
 
-template.dvi: template.tex
-	latex template.tex
-	latex template.tex
+main-en.pdf: main-en.dvi
+	dvipdf $<
+
+main-en.dvi: main-en.tex core.tex
+	latex $<
+	latex $<
+
+main-fr.pdf: main-fr.dvi
+	dvipdf $<
+
+main-fr.dvi: main-fr.tex core.tex
+	latex $<
+	latex $<
 
 clean:
-	rm template.aux template.dvi template.log template.out template.pdf
+	rm -f *.aux *.dvi *.log *.out *.pdf *.cut
