@@ -1,18 +1,11 @@
-all: main-en.pdf main-fr.pdf
+all: main-en.pdf ic-en.pdf cto-en.pdf
 
-main-en.pdf: main-en.dvi
+%-en.pdf: %-en.dvi
 	dvipdf $<
 
-main-en.dvi: main-en.tex core.tex
-	latex $<
-	latex $<
-
-main-fr.pdf: main-fr.dvi
-	dvipdf $<
-
-main-fr.dvi: main-fr.tex core.tex
-	latex $<
-	latex $<
+%-en.dvi: %-en.tex %.tex
+	latex -interaction=nonstopmode $<
+	latex -interaction=nonstopmode $<
 
 clean:
 	rm -f *.aux *.dvi *.log *.out *.pdf *.cut
